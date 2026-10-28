@@ -1,0 +1,40 @@
+{
+    "initial_rows": 48842,
+    "initial_columns": 15,
+    "initial_missing_values": 6465,
+    "duplicate_rows_removed": 52,
+    "rows_removed_missing_income": 0,
+    "rows_after_cleaning": 48790,
+    "columns_after_cleaning": 15,
+    "missing_values_after_cleaning": 0,
+    "final_rows": 48790,
+    "final_columns": 21,
+    "final_missing_values": 0,
+    "final_column_names": [
+        "age",
+        "workclass",
+        "fnlwgt",
+        "education",
+        "education_num",
+        "marital_status",
+        "occupation",
+        "relationship",
+        "race",
+        "sex",
+        "capital_gain",
+        "capital_loss",
+        "hours_per_week",
+        "native_country",
+        "income",
+        "age_group",
+        "work_hours_band",
+        "has_capital_gain",
+        "has_capital_loss",
+        "capital_gain_log",
+        "capital_loss_log"
+    ],
+    "income_distribution": {
+        "<=50K": 37109,
+        ">50K": 11681
+    }
+}
