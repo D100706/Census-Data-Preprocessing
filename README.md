@@ -27,7 +27,7 @@ The dataset contains demographic and employment-related information, including a
 * NumPy
 * Matplotlib
 * Seaborn
-* VS Code
+* Visual Studio Code
 
 ## Project Structure
 
@@ -40,7 +40,8 @@ Census_Data_Preprocessing/
 │   └── processed/
 │       └── adult_census_clean.csv
 ├── docs/
-│   └── data_documentation.md
+│   ├── data_documentation.md
+│   └── DATA_DICTIONARY.md
 ├── outputs/
 │   ├── income_distribution.png
 │   ├── missing_values_after.png
@@ -50,11 +51,10 @@ Census_Data_Preprocessing/
 │   └── preprocess.py
 ├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .venv/
+└── requirements.txt
 ```
 
-The `.venv` directory contains the local Python virtual environment and should not be uploaded to GitHub.
+**Note:** The `.venv/` directory contains the local Python virtual environment. It is excluded from version control and should not be uploaded to GitHub.
 
 ## Data Preprocessing Steps
 
@@ -87,15 +87,13 @@ Six new features are created:
 
 ### 4. Data Visualization
 
-Generates charts showing the income distribution and missing-value status after preprocessing.
+Generates charts showing income distribution and the missing-value status after preprocessing.
 
 ### 5. Summary Report
 
 Saves preprocessing statistics in JSON format.
 
 ## Results
-
-The completed pipeline produced the following results:
 
 | Metric                    | Result |
 | ------------------------- | -----: |
@@ -117,38 +115,36 @@ The completed pipeline produced the following results:
 
 ### Prerequisites
 
-Install Python and Git, and ensure that the raw dataset files are available in `data/raw/`.
+Install Python and Git. Ensure the raw dataset files are available in `data/raw/`.
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd Census_Data_Preprocessing
+git clone https://github.com/D100706/Census-Data-Preprocessing.git
+cd Census-Data-Preprocessing
 ```
 
-Replace `YOUR_GITHUB_REPOSITORY_URL` with your actual repository URL.
-
-### 2. Create a virtual environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 3. Activate the environment
+### 3. Activate the Environment
 
-**Windows PowerShell:**
+For Windows PowerShell:
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
 ```
 
-### 4. Install dependencies
+### 4. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Run the preprocessing script
+### 5. Run the Preprocessing Script
 
 ```bash
 python scripts/preprocess.py
@@ -158,7 +154,7 @@ The cleaned dataset, JSON summary, and visualization files will be generated aut
 
 ## Documentation
 
-Refer to `docs/data_documentation.md` for additional information about the dataset, preprocessing operations, engineered features, and limitations.
+Refer to the files in `docs/` for additional information about the dataset, preprocessing operations, engineered features, and limitations.
 
 ## Conclusion
 
